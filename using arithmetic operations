@@ -1,0 +1,14 @@
+var x = 3;
+var y = 4;
+var z = x + 2*y;
+print(z);
+
+var n1=21;
+var n2=21;
+var n3=n1+n2;
+print(n3);
+
+var s1="a";
+var s2="b";
+var s3=s1+s2;
+print(s3);
