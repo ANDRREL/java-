@@ -1,0 +1,7 @@
+var img = new SimpleImage(20,20);
+print(img);
+for (var pixel of img.values()){
+    var newG=255-pixel.getGreen();
+    pixel.setGreen(newG);
+}
+print(img);
