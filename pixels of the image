@@ -1,0 +1,6 @@
+var w=img.getWidth();
+print(w);
+var h=img.getHeight();
+print(h);
+var p=img.getPixel(200,200);
+print(p);
