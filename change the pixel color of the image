@@ -1,3 +1,4 @@
+//to red
 var image = new SimpleImage("chapel.png");
 for (var pixel of image.values()){
     if(pixel.getRed()){
@@ -6,6 +7,14 @@ for (var pixel of image.values()){
     else{
         pixel.setRed(pixel.getRed());
     }
+}
+
+print(image);
+
+//to green
+var image = new SimpleImage("chapel.png");
+for (var pixel of image.values()){
+    pixel.setRed(0);
 }
 
 print(image);
