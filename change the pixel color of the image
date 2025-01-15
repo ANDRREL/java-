@@ -1,0 +1,11 @@
+var image = new SimpleImage("chapel.png");
+for (var pixel of image.values()){
+    if(pixel.getRed()){
+        pixel.setRed(255);
+    }
+    else{
+        pixel.setRed(pixel.getRed());
+    }
+}
+
+print(image);
