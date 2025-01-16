@@ -1,0 +1,15 @@
+var fgimage = new SimpleImage("drewRobert.png");
+var bgimage = new SimpleImage("dinos.png");
+var Output = new SimpleImage(fgimage.getWidth(), fgimage.getHeight());
+for (var pixel of fgimage.values()){
+    if(pixel.getGreen() >240){
+        var X= pixel.getX();
+        var Y = pixel.getY();
+        var bgpixel = bgimage.getPixel(X,Y);
+        Output.setPixel(X,Y,bgpixel);
+    }
+    else{
+        Output.setPixel(pixel.getX(),pixel.getY(),pixel);
+    }
+}
+print(Output);
